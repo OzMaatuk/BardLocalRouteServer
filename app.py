@@ -47,7 +47,7 @@ def get_bard_client():
     return genai.GenerativeModel('gemini-pro')
 
 # API endpoint using Bard API
-@chat.post("/bard/chat/completions/", response_model=ResponseData, summary="Send a chat message to Bard and get an OpenAI-compatible API response.")
+@chat.post("/bard/chat/completions", response_model=ResponseData, summary="Send a chat message to Bard and get an OpenAI-compatible API response.")
 async def chat_completions_endpoint(request: RequestData):
     try:
         model = request.model
