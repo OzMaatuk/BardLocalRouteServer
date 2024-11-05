@@ -1,9 +1,9 @@
 import requests
 
-url = "http://127.0.0.1:8000/bard/chat/completions/"  # Replace with your server's URL
+url = "http://127.0.0.1:8000/gemini/"  # Replace with your server's URL
 
 payload = {
-    "model": "gemini-pro",
+    "model": "gemini-1.5-flash",
     "messages": [
         { "role": "user", "content": "Hello, can you explain about fastapi?" }
     ]
